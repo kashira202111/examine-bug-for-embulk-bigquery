@@ -1,0 +1,8 @@
+source 'https://rubygems.org/'
+
+# No versions are specified for 'embulk' to use the gem embedded in embulk.jar.
+# Note that prerelease versions (e.g. "0.9.0.beta") do not match the statement.
+# Specify the exact prerelease version (like '= 0.9.0.beta') for prereleases.
+gem 'embulk', '0.11.1'
+
+gem 'embulk-output-bigquery'

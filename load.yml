@@ -1,0 +1,22 @@
+in:
+  type: file
+  path_prefix: "data.csv"
+  parser:
+    charset: UTF-8
+    type: csv
+    delimiter: ','
+    quote: '"'
+    columns:
+    - {name: id, type: long}
+    - {name: name, type: string}
+out:
+  type: bigquery
+  mode: replace
+  project: kashira-test-embulk-20240712-1
+  destination_project: kashira-test-embulk-20240712-2
+  dataset: test_embulk
+  auth_method: service_account
+  json_keyfile: credential/sa.json
+  auto_create_table: true
+  auto_create_dataset: false
+  table: test_data

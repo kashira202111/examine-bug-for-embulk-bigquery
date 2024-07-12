@@ -8,7 +8,7 @@ https://github.com/embulk/embulk-output-bigquery/pull/148
 
 それぞれのプロジェクトは以下の目的で利用する。(また今後は `project`, `destination_project` として呼ぶ)
 - `kashira-test-embulk-20240712-1` を `project`
-- `kashira-test-embulk-20240712-1` を `destination_project`
+- `kashira-test-embulk-20240712-2` を `destination_project`
 
 ![alt text](<image/create_project1.png>)
 ![alt text](<image/create_project2.png>)
@@ -25,6 +25,14 @@ https://github.com/embulk/embulk-output-bigquery/pull/148
 
 鍵は、このリポジトリのcredential/に保存した。
 
-# Embulkのセットアップ
+# 実行方法
+setup
 ```
+cd bundle
+embulk bundle
+```
+
+実行
+```
+embulk run load.yml -b ./bundle
 ```
