@@ -21,9 +21,14 @@ https://github.com/embulk/embulk-output-bigquery/pull/148
 ## サービスアカウントの作成
 `destination_project`側に属するサービスアカウントを作成する。
 ![alt text](image/create_sa.png)
-![alt text](image/create_sa_role.png)
 
 鍵は、このリポジトリのcredential/に保存した。
+
+## 権限を付与する
+条件を揃えるために両方ownerで設定.
+
+![alt text](image/grant_owner1.png)
+![alt text](image/grant_owner2.png)
 
 # 実行方法
 setup
