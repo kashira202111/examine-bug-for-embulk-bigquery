@@ -32,7 +32,7 @@ cd bundle
 embulk bundle
 ```
 
-実行
+実行(リポジトリ直下で)
 ```
 embulk run load.yml -b ./bundle
 ```
